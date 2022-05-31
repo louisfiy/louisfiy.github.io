@@ -1,0 +1,488 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#24292f">
+  <meta name="author" content="louisfiy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="">
+  
+  
+  <title>开发日志 · 随心所记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://lib.baomitu.com/highlight.js/10.7.3/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2952668_vsc0wg4yw2k.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom_fluid.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+</head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>语冰</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont ic-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont ic-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont ic-category"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont ic-tag"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont ic-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="开发日志">
+              
+                开发日志
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          >
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<article class="page-content">
+  <div class="markdown-body">
+    <p>本博客使用 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a> 搭建。本文假设您能够阅读并理解文中提到的技术。</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>首先安装：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a>（版本 &gt; 10.13，建议 12 以上）</li>
+<li><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></li>
+</ul>
+<p>安装完上述应用程序后，即可使用 npm 全局安装并初始化 Hexo 文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><div class="code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><pre><code class="hljs bash">$ npm install -g hexo-cli<br>$ hexo init &lt;folder&gt;<br>$ <span class="hljs-built_in">cd</span> &lt;folder&gt;<br>$ npm install<br></code></pre></td></tr></table></figure>
+
+<p>不全局安装的情况下，使用 npx 命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npx hexo init &lt;folder&gt;<br>$ <span class="hljs-built_in">cd</span> &lt;folder&gt;<br>$ npm install<br></code></pre></td></tr></table></figure>
+
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs bash">.<br>|── .deploy_*           // 一键部署生成的文件夹<br>|── public              // 构建生成的静态文件<br>|── scaffolds           // 创建文章使用的模板<br>|── scripts             // 自定义脚本<br>|── <span class="hljs-built_in">source</span>              // 用户资源文件<br>|   |── _drafts         // 草稿文件夹<br>|   |── _posts          // 文章文件夹<br>|   |── [custom]        // 自定义页面<br>|   |── css             // 样式<br>|   |── img             // 静态资源<br>|   |── js              // 脚本<br>|── themes              // 主题文件夹<br>|── _config.[theme].yml // 主题配置文件<br>|── _config.yml         // 配置文件<br>|── db.json             // 缓存文件<br>|── package.json<br></code></pre></td></tr></table></figure>
+
+<p>Hexo 配置在 <code>_config.yml</code> 中修改，参考：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">Hexo 配置</a>。</p>
+<p>主题配置建议在 <code>_config.[theme].yml</code> 中修改，以当前使用的主题 Fluid 为例，参考：<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">Fluid 配置</a>。</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h4 id="新建文章-x2F-页面-x2F-草稿"><a href="#新建文章-x2F-页面-x2F-草稿" class="headerlink" title="新建文章&#x2F;页面&#x2F;草稿"></a>新建文章&#x2F;页面&#x2F;草稿</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 在 source/_posts 下新建文章，默认 post 可省略</span><br>$ hexo new post &lt;title&gt;<br><br><span class="hljs-comment"># 在 source 下新建页面</span><br>$ hexo new page &lt;filename&gt;<br><br><span class="hljs-comment"># 在 source/_drafts 下新建草稿</span><br>$ hexo new draft &lt;title&gt;<br><br><span class="hljs-comment"># 发表草稿，默认 _posts，也可指定页面 [layout]</span><br>$ hex publish [layout] &lt;filename&gt; <br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当然，你也可以手动在 <code>source/_posts</code> 文件夹下创建 .md 文件，并保持统一约定的 <code>Front-matter</code> 规则即可。页面同理。同时 css&#x2F;js&#x2F;img 这些静态资源都放到 <code>source</code> 文件夹下。</p>
+</blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/writing.html">写作</a>、<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter</a> 和 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins">标签插件</a></p>
+<h4 id="运行-x2F-打包"><a href="#运行-x2F-打包" class="headerlink" title="运行&#x2F;打包"></a>运行&#x2F;打包</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 等同于 hexo serve，启动本地服务 http://localhost:4000</span><br>$ npm run serve<br><br><span class="hljs-comment"># 等同于 hexo clean，清除缓存（db.json）和已生成的静态文件（public）</span><br>$ npm run clean<br><br><span class="hljs-comment"># 等同于 hexo generate，生成的静态文件（public）</span><br>$ npm run build<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>实际指令见 <code>package.json</code> 中的 <code>scripts</code>。</p>
+</blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/commands">指令</a>、<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/server.html">服务器</a> 和 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/generating.html">生成文件</a></p>
+<h2 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a></li>
+</ul>
+<p>在 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 上创建一个公有仓库，命名为 <code>&lt;your_github_username&gt;.github.io</code>，将打包生成的 <code>public</code> 文件夹推送到该仓库，访问 https:&#x2F;&#x2F;&lt;your_github_username&gt;.github.io 即可。</p>
+<ul>
+<li>一键部署</li>
+</ul>
+<p>在 _config.yml 中配置 <code>deploy</code> 参数，支持多种部署方式，详见 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/one-command-deployment">Hexo 部署</a>。以 Git 为例：</p>
+<ol>
+<li>首先安装 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-deployer-git">hexo-deployer-git</a> 插件：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改配置</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repo: https://github.com/&lt;your_github_username&gt;/&lt;your_github_username&gt;.github.io<br>  branch: main<br>  token: <span class="hljs-comment"># 需要在 GitHub 生成（请勿泄露）</span><br>  name: &lt;your_git_username&gt;<br>  email: &lt;your_git_email&gt;<br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>如何生成 token？登录 Github → 点击右上角头像 → “Settings” → “Developer settings” → “Personal access tokens” → “Generate new token”</p>
+</blockquote>
+<ol start="3">
+<li>生成站点文件并部署至远程库</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ npm hexo clean<br><br><span class="hljs-comment"># 等同于 hexo deploy</span><br>$ npm run deploy<br></code></pre></td></tr></table></figure>
+
+<p>部署会将 <code>public</code> 下所有文件复制到 <code>.deploy_git</code> 文件夹并推送到上述配置指定的仓库（repo）和分支（branch）中，并完全覆盖该分支下已有的内容。</p>
+<h2 id="技术栈"><a href="#技术栈" class="headerlink" title="技术栈"></a>技术栈</h2><p><strong>框架</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">Node.js</a>：基于 Chrome V8 引擎的 JavaScript 运行时环境</li>
+<li><a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a>：Node.js 的包管理器</li>
+<li><a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>：免费开源的分布式版本控制系统</li>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a>：快速、简洁且高效的博客框架</li>
+<li><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">Fluid</a>：Material Design 风格的 Hexo 博客主题</li>
+<li><a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a>：快速、简洁且高效的无后端评论系统</li>
+</ul>
+<p><strong>平台</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>：世界上最大、最先进的代码托管平台</li>
+<li><a target="_blank" rel="noopener" href="https://vercel.com/">Vercel</a>：静态网站托管平台，使开发人员能够构建和发布精彩的东西</li>
+<li><a target="_blank" rel="noopener" href="https://www.leancloud.cn/">Leancloud</a>：领先的 Serverless 云服务</li>
+<li><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>：轻量级但功能强大的源代码编辑器</li>
+<li><a target="_blank" rel="noopener" href="https://www.namesilo.com/">NameSilo</a>：为您的网站寻找便宜的域名</li>
+</ul>
+<h2 id="里程碑"><a href="#里程碑" class="headerlink" title="里程碑"></a>里程碑</h2><table>
+<thead>
+<tr>
+<th align="left">日期</th>
+<th align="left">日志</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2022&#x2F;02&#x2F;18</td>
+<td align="left">注册域名</td>
+<td align="left"><a href="https://louisfiy.com/">https://louisfiy.com/</a></td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;12&#x2F;26</td>
+<td align="left">创建 Vercel App</td>
+<td align="left">备用站</td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;12&#x2F;09</td>
+<td align="left">新增 Valine 评论</td>
+<td align="left">Leancloud 提供数据存储</td>
+</tr>
+<tr>
+<td align="left"><del>2021&#x2F;12&#x2F;01</del></td>
+<td align="left"><del>创建 Cloudflare Pages</del></td>
+<td align="left"><del>（访问不稳定，放弃）</del></td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;11&#x2F;25</td>
+<td align="left">新增一键部署</td>
+<td align="left">🍵</td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;11&#x2F;15</td>
+<td align="left">首次发布文章</td>
+<td align="left">🎉🎉🎉</td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;11&#x2F;12</td>
+<td align="left">创建 GitHub Pages</td>
+<td align="left"><strong>网站上线</strong></td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;11&#x2F;10</td>
+<td align="left">初始化 Fluid</td>
+<td align="left">🍗</td>
+</tr>
+<tr>
+<td align="left">2021&#x2F;11&#x2F;09</td>
+<td align="left">初始化 Hexo</td>
+<td align="left">爱了爱了💕</td>
+</tr>
+</tbody></table>
+
+  </div>
+
+  
+</article>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+  </div>
+  
+  <div class="statistics" style="display: none">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+          访问量 
+          <span id="leancloud-site-pv"></span>
+          
+        </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+          访客数 
+          <span id="leancloud-site-uv"></span>
+          
+        </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+  
+    <script  src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  
+  
+  
+    <script defer src="https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js" ></script>
+  
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

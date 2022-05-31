@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#24292f">
+  <meta name="author" content="louisfiy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="寒冬的一个黄昏，无情的大风吞噬着整个城市，发出“呜——呜——”地吼叫，扫落的枯叶在空中飞舞，没有目的地四处飘落。街灯在寒风中愈显孤寂，发出微弱的黄光。街上寥寥的几个乞丐无助地走着、走着……这是金融危机下的第一个寒冬。 小巷深处的一座房子里，古老的挂钟“咚！咚！咚……”地发出沉闷的响声，久久地在空气中荡漾。夜统治了城市，风丝毫不减它的威力，猛烈地撕扯着窗户，寒气钻过窗缝，屋内骤然冷起来，风吹动了窗边">
+  
+  
+  <title>月光 · 随心所记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://lib.baomitu.com/highlight.js/10.7.3/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2952668_vsc0wg4yw2k.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom_fluid.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+</head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>语冰</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont ic-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont ic-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont ic-category"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont ic-tag"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont ic-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="月光">
+              
+                月光
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2008-12-17 20:01" pubdate>
+        2008年12月17日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.5k 字
+    </span>
+  
+
+  
+
+  
+  
+    <span style="display: none">
+      
+        <!-- LeanCloud 统计文章PV -->
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+      
+    </span>
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">月光</h1>
+
+            
+              
+                <div class="note note-warning">
+                   <p style="font-size: 1rem;">温馨提示：</p> <p style="font-size: 0.9rem;">这是一篇年代久远的文章，你可能会看到糟糕的剧情、夸张的文笔、空洞的内涵……请不要过分期待。</p> 
+                </div>
+              
+            
+            
+              
+            
+            
+            
+            <div class="markdown-body">
+              <p>寒冬的一个黄昏，无情的大风吞噬着整个城市，发出“呜——呜——”地吼叫，扫落的枯叶在空中飞舞，没有目的地四处飘落。街灯在寒风中愈显孤寂，发出微弱的黄光。街上寥寥的几个乞丐无助地走着、走着……这是金融危机下的第一个寒冬。</p>
+<p>小巷深处的一座房子里，古老的挂钟“咚！咚！咚……”地发出沉闷的响声，久久地在空气中荡漾。夜统治了城市，风丝毫不减它的威力，猛烈地撕扯着窗户，寒气钻过窗缝，屋内骤然冷起来，风吹动了窗边桌子上的日记本。这间屋子的主人的生活正如她在日记本上所写的那样：</p>
+<p>“十二月十三日。</p>
+<p>“早晨早早起身，我像往常一样做完早餐后，随手抓起两个包子就往公司去了。今天是周六，二女儿不用上学，丈夫也失业快半个月了，且让他们多睡会儿吧。</p>
+<p>“我去经理室向经理请示。他在办公室里和副经理谈话，他叫副经理打印一份计划书给总公司送去，内容十有八九是关于应对金融危机的。副经理答应着出去了。</p>
+<p>“经理递了一份资料给我，说：‘你可以回去细读几遍。’我答应一声，便出去了。</p>
+<p>“我扫了一眼资料封面一行黑色的宋体题目：《关于本公司在应对国际金融危机的若干调查及应对措施》。我厌恶得看都不看就把资料抛在办公桌上。公司上个月亏损了一百多万元，若再算上前个月亏的五十来万元，本公司已经连续两个月出现经济负增长了。</p>
+<p>“下午，公司全体员工集中会议室开会。会议上基本都是废话，最后公司扬言：若再这样发展下去，将实施裁员方案！于是人心惶惶中结束了会议。下班的时候，月已上柳梢头。</p>
+<p>“十二月十四日。</p>
+<p>“难得今天是星期天，我一个人来到花园里散心。在花园里看见二女儿带着大伯不满三岁的孙女在玩儿。我看见女儿未泯的童心和她水灵灵而充满爱的大眼睛，不觉地想起自己彩虹般美丽的少女时代……</p>
+<p>“女儿看见我走来，便说：‘老妈，难得今天不用上班，干嘛不多睡一会儿？’说着又叫大伯的孙女给我问好。</p>
+<p>“‘妈，您好像不开心。我知道这些天您很烦心……’她突然不说了，她只知道金融危机比流感还恐怖，却不知我有多珍惜这份工作。我开始忧郁起来，我不知道如果我失去这份工作，那么不晓得这个家会是怎样的处境。</p>
+<p>“‘我要回去了，我还得给你们煮早饭呢。’</p>
+<p>“现在，我躺在床上发呆，突然想起了可爱的小女儿。这孩子一向很乖巧很懂事，她深知自己的家庭并不怎么富裕。这些年来，对于两个女儿，物质上的享受暂且不说，最令我痛苦的是家庭的不光景给孩子们的自尊心（或者说虚荣心）所带来的伤害。她们步入学堂时，周围的小朋友是怎样看她们的？——好在这几年的生活状况刚有起色，偏偏这个时候……</p>
+<p>“生活，这就是生活！</p>
+<p>“晚上的时候，我吩咐女儿给我斟来一杯热水。她把水杯放在桌子上，站在我旁边，似乎有什么话要说，可话到了嘴边，又咽了下去。</p>
+<p>“十二月十五日。</p>
+<p>“今天我在整理书信时，发现了三个月前刚上大学的大女儿寄来的一封信，上面有一段令人鼓舞的话：</p>
+<p>“‘……当我给你们写这封信的时候，难以抑制心中的激动。本来在生活的激流和漩涡中，我已决心放弃学业，我只一味认为既然我是这个家的长女，就应该早一点涉足社会。然而在我心灰意冷的时候，你们却鼓励我继续深造……是啊，还有什么可说的呢？我的心沉浸在无比的温暖中，仿佛自己是世上最幸福的人。’……</p>
+<p>“就在我把信叠好放入信封的时候，猛然想起原来后天便是小女儿的生日，这倒使我愣住了。我想，即使生活再怎么艰难，这个生日依然会是最美丽的。”</p>
+<p>这个家庭的女主人只在日记本上写了这么点东西，便搁下了。</p>
+<p>风止了，月光竭力地从窗缝挤进来，撒在这本古木色的日记本上，那般明净，那般憔悴。也许，这个家庭也会像这个世界一样：</p>
+<p>冬天来了，春天还会远吗？（If winter comes, can spring be far behind?）</p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <!-- <i class="iconfont icon-tags"></i> -->
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%89%A7%E6%83%85/">#剧情</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/doc/p20081228/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">“凤凰”事件始末 🔑</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/doc/p20081124/">
+                        <span class="hidden-mobile">再生缘</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.16/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","appKey":"QRn77vH9G43ld12COHPV7geM","path":"window.location.pathname","placeholder":"来都来了，留个脚印呗~","avatar":"retro","meta":["nick","mail"],"requiredFields":["nick"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"https://dnnumjcb.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+  </div>
+  
+  <div class="statistics" style="display: none">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+          访问量 
+          <span id="leancloud-site-pv"></span>
+          
+        </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+          访客数 
+          <span id="leancloud-site-uv"></span>
+          
+        </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+  
+    <script  src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  
+  
+  
+    <script defer src="https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js" ></script>
+  
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

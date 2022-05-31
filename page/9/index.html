@@ -1,0 +1,627 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#24292f">
+  <meta name="author" content="louisfiy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="">
+  
+  
+  <title>随心所记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2952668_vsc0wg4yw2k.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom_fluid.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+</head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>语冰</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont ic-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont ic-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont ic-category"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont ic-tag"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont ic-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="&lt;(￣︶￣)↗ Hello, World!">
+              
+                <(￣︶￣)↗ Hello, World!
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20081228/" target="_self">
+          “凤凰”事件始末 🔑
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20081228/" target="_self">
+          
+          （这是一篇加密文章，需要密码才能访问。）
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-12-28 17:04" pubdate>
+              2008-12-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20081217/" target="_self">
+          月光
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20081217/" target="_self">
+          
+          寒冬的一个黄昏，无情的大风吞噬着整个城市，发出“呜——呜——”地吼叫，扫落的枯叶在空中飞舞，没有目的地四处飘落。街灯在寒风中愈显孤寂，发出微弱的黄光。街上寥寥的几个乞丐无助地走着、走着……这是金融危机下的第一个寒冬。 小巷深处的一座房子里，古老的挂钟“咚！咚！咚……”地发出沉闷的响声，久久地在空气中荡漾。夜统治了城市，风丝毫不减它的威力，猛烈地撕扯着窗户，寒气钻过窗缝，屋内骤然冷起来，风吹动了窗边
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-12-17 20:01" pubdate>
+              2008-12-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%A7%E6%83%85/">剧情</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20081124/" target="_self">
+          再生缘
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20081124/" target="_self">
+          
+          一  我赢了！ 杀尽城里的人，原因很简单，我只想向所有人证明：我是最强的！顿觉失去了什么。我忘了我的初衷，忘了对你的承诺：做一个锄强扶弱的英雄。虚荣，可怕的虚荣啊！我这双沾满鲜血的手，我算什么英雄……手中的“碧亢”宝剑“锵”地掉落在地。 相对无言。 望着你憔悴的身姿，看着你含泪把“碧亢”刺入我的胸膛，我无言，满足地笑了，但是我是那么清楚地、清楚地看到你双眸里饱含的泪水。我知道，你的心无比痛苦，我又
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-11-24 20:55" pubdate>
+              2008-11-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A5%87%E5%B9%BB/">奇幻</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20081022/" target="_self">
+          错过与忧伤Ⅱ
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20081022/" target="_self">
+          
+          夕阳西下。 一个少女轻快地跳动在青石板铺成的街上。她脸上很红润，一对水灵灵的大眼睛就镶在睫毛下面，嘴唇微红，笑起来脸颊显出一对酒窝。她穿着白色衬衣和深蓝色裙子，脚上穿着白色丝袜和方口扣襻儿布鞋，极其简朴。 她一手有气无力地提着花布书包，另一只手轻轻拂去垂在额头上的乱发。小小的闷热令她微微喘息着。 走到街的尽头的宅院门前，她伸手拍响了门上的大铜环。 “来啦！来啦！”她听到门内陈大妈的应声，不一会儿，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-10-22 15:51" pubdate>
+              2008-10-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%A0%A1%E5%9B%AD/">校园</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20080922/" target="_self">
+          时空行者
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20080922/" target="_self">
+          
+          楔子  北京时间2008年9月22日8时26分。请记住这一刻。 我时常在想，在我短暂的人生中，应该记住多少个这样令人兴奋的时刻？而我却不知道该用什么样的言语来描绘我此时此刻的心情。 那么现在，站在喜马拉雅之巅，我在想：应该到哪儿度过我十七岁的生日？我可以回到过去，也可以去到未来，搞不好还能回到2008年7月8日——我会心一笑，这确实是一个值得记住的好日子。那一天，我第一次遇到我的真命天女。 其实，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-09-22 16:06" pubdate>
+              2008-09-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20080430/" target="_self">
+          爱在夏雨荷
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20080430/" target="_self">
+          
+          她，一个西湖女子，抿着小嘴地在湖里撑着小船，随后卧在船板上，映着荷花，像一朵睡莲。 她，是雨后的荷花，名叫雨荷，有点爱撒娇，语儿却撼动人心，令人夙夜难寝相思。 那年夏天，正值荷花六月别样红的季节，我去了一趟杭州。 杭州自古多才子佳人，郎才女貌的新婚夫妇数不胜数，令人不免有些眼花缭乱。 路上都是些夫妇，只有到了西湖，才看见了湖里的一枝枝美丽的荷花。 看着这些婀娜多姿的杭州美女，不免心儿有些悸动，于是
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2008-04-30 20:03" pubdate>
+              2008-04-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%89%A7%E6%83%85/">剧情</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/8/#board"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#board">7</a><a class="page-number" href="/page/8/#board">8</a><span class="page-number current">9</span>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+  </div>
+  
+  <div class="statistics" style="display: none">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+          访问量 
+          <span id="leancloud-site-pv"></span>
+          
+        </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+          访客数 
+          <span id="leancloud-site-uv"></span>
+          
+        </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

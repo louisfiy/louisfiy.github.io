@@ -1,0 +1,121 @@
+/* 文章样式 */
+.markdown-body >p,
+.markdown-body blockquote >p,
+.markdown-body .hbe >* >p {
+  text-indent: 2rem;
+}
+
+.markdown-body sub,
+.markdown-body sup,
+.markdown-body .image-caption {
+  text-indent: initial;
+}
+
+.markdown-body input {
+  margin: 0 0 2em 0;
+}
+
+/* Valine样式 */
+.comments .vwrap {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.v[data-class="v"] .vpower {
+  display: none;
+}
+
+/* 加密插件样式 */
+.markdown-body .hbe-content {
+  font-size: 100% !important;
+}
+
+.markdown-body .hbe-button {
+  margin: 32px auto 0;
+}
+
+/* 自定义样式 */
+.markdown-body .cs-wrong {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.markdown-body .cs-wrong.cs-change {
+  color: red;
+  font-family: "宋体"
+}
+
+/* 聊天样式 */
+.markdown-body .chat {
+  display: flex;
+  align-items: end;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.markdown-body .chat .avatar {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+
+.markdown-body .chat .box {
+  flex: 1;
+  display: flex;
+}
+
+.markdown-body .chat.left {
+  justify-content: left;
+  margin-right: 100px;
+}
+
+.markdown-body .chat.right {
+  justify-content: right;
+  margin-left: 100px;
+}
+
+.markdown-body .chat.right .box {
+  justify-content: flex-end;
+}
+
+.markdown-body .chat.left .box .content {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .5rem .3rem 0 .6rem;
+}
+
+.markdown-body .chat.right .box .content {
+  background-color: #98e165;
+  border-radius: 4px;
+  padding: .5rem .3rem 0 .6rem;
+}
+
+
+@media (max-width: 767px) {
+  .markdown-body .chat {
+    align-items: start;
+  }
+
+  .markdown-body .chat .avatar {
+    width: 46px;
+    height: 46px;
+  }
+
+  .markdown-body .chat.left {
+    margin-right: 51px;
+  }
+
+  .markdown-body .chat.right {
+    margin-left: 51px;
+  }
+
+  .markdown-body .chat.left .box {
+    margin-left: 5px;
+  }
+
+  .markdown-body .chat.right .box {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,499 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#24292f">
+  <meta name="author" content="louisfiy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="（这是一篇加密文章，需要密码才能访问。）">
+  
+  
+  <title>口吐芬芳 🔒 · 随心所记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://lib.baomitu.com/highlight.js/10.7.3/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2952668_vsc0wg4yw2k.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom_fluid.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+</head>
+
+
+<body>
+  <header style="height: 50vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>语冰</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont ic-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont ic-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont ic-category"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont ic-tag"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont ic-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="口吐芬芳 🔒">
+              
+                口吐芬芳 🔒
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2013-06-27 01:29" pubdate>
+        2013年6月27日 凌晨
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      484 字
+    </span>
+  
+
+  
+
+  
+  
+    <span style="display: none">
+      
+        <!-- LeanCloud 统计文章PV -->
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+      
+    </span>
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">口吐芬芳 🔒</h1>
+
+            
+              
+            
+            
+              
+            
+            
+            
+            <div class="markdown-body">
+              <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="抱歉，这个密码好像不对耶！" data-whm="抱歉，这篇文章无法被校验！">
+  <script id="hbeData" type="hbeData" data-hmacdigest="01440718c3cc38feac2bf511ce95e845e112447567ed268c145b0c434bc0ee86">05b160e19950cf4dce846e4923d95c618eb899b07f83f92cd7674565e7aca832537ebdfe257db9b5e0359a25a00984d53aa47bbc9690cebd5a744f01f83577587f67d505e3a52dd338707c0341f7ffb0d546c7c00e9ccd01155dafc4dba9525ee986dd620544638b653649c05b17576f43c77a43f93505572acf8b27a5b1d5c126883440334b434816699237a42710b7c4f37ea98e26037d84b7b783e25a8ec52855f93b1509c8ac48f516e4aab78038871bb60aa1c2c2f69e4bacaba4fa294fd2ade865434e90595fa87fd7123fb501d9874bee735fdb608a7ea1804a15db15e33fd36e5df418c4d95efec39ab7bf5369326dd3e8b597dc6f5326ff977d95c59d255e5986440a01966b2888d448be508b846c0d951386010a2f2424eaa142b19ad3ab5a5793bf7cf4f2586f7c39d2c941268a9ba0ba33a0a50515afb3c94f29ddded2aaa231819178a2cd77d0a7b0cfb5d86b8a1b19b9d2b24c72ff3afb352726e07b35921a51654624cee95228f7e57fd60ea384b5d7a7a58de1c31da59097dd010e96652352e5de804ee90ade1f1ddb590848a32cde154c50e558b07fb76bcf60c4f03e13926d8c55ee40546a0f0035c79e4efc88e7023479d3580c592ab627b52a866f03384794bb181e58031a0bd2a3ef7b5297fd81868eaa0956d3a2ae0850fb173fc8950144de8ee5f9653680808d956aeb1e71c188aff3f0472972cf6f00910f6a8e2017192afccaeefde09d3e71d383112120d9e298a032537d185a5d14de5a003ba3b2e7213a841d61c064b86dca667178978d5c087fe74c099cb9bc80b9d76d2ba6a8a5da5cc2b0eaf336a87d0045b1d630506128f1f9d74c303094e6f4836e25d9d589529ba148fd780eca243ddc92b6cbc7d55ada46435eee9e50c599107bb9cbc9958b3f710f288719ea23ee10cb630bac49f77055637f2d5b4ece29b78a767520684dfbc4ce8b81cfe457b28e124a486acf9a37539b867d0617891a90eac0eccbb54491092f71425ea0a2c5620b03140568051670302ecf272b1986123e70134e08b576c136b07905c920a20bb1af03b4a75225002dd6d720da3b60124125091d21c18f930789b05de0599d2f429aa8a3e5fee4fe85fca427f73cbef54cfa089e84c0f1464e9c0d13dd6d81cd901ef9bb74ec58d660d148a48e498b35ee46f678d412d1e906c0ecca1823b3284d2dbb44ffe9190555a5770d3f7b3dda2fc939e744a47df2974766fb95672ffb55277be5e9851acf64f1fb682fa727eb3ae90fc61f7324309a0fc9511368d210d0d12e30ae22842792b9e21a116d846a41ceddbca147b6a54fc794909396f4e6744569b541ebd8f1f74e08bf50129c2094ba0d1f66b58b98e8292beae24ead547a7e043e9b75ec865fbb54e58dfc5c1aa8d65a7eab8b1fd8532f9be702b467f206886bcae9296d6627df1ab95aec9ce190d591f165755b4f270d2a2db60c833c48adc700e1477ca5e9efe8f13e1302e38f903f7b65f6cba9c390fec2262cfadbaeaddb93feb7465ac93aebd43b37a2c9501d34101880cb81c427622a14d8373100dc5c8c2f5696878669bc66b24990e7efc6cc05d85a4ddeffff8a9bff4a4b2dd6c38bf2f342412d5569dca2cfe84bb2d9cd0695ab075d59c4e08e540b9ab9825d98a1118170ea6c8cd9e979714b1c712a7aa86a2a7a4e5975f599925b187d7df4ac8023d83a97da753f1fc5c7c6076419c650d8f9004eee03b7875897c4572e9b0b390c813d0a3db8cd540cfd6781deca139f608aa6a48f97535b277c4f7d65ca594a45018274d969dbdd1f0f37384dc1dff2d5bdb2554b7a47ca2351cd4bc4bceec9356b26e8fbd23823c1e9ca5c87a5598bdd2b8f3cb1ce6bf4df48e06ce8979db5c8761fe4cba1f1ad1413a8cb461f7fc0aa304e6a3ec7aae3a4ddacd276258d9c6c4d6789126edff3acdaabd9a492b78876de3c5cce3a633b28aa5ad6298a99c8f78b3c1042957b6bbef3aeee58108857401ff38d00af6e2b56910d38bda386e1219a369cc37d844fc9275e59722b316a7edbf33915bebb3b6c35093b12dff8af02f587d87cfaea6144731b564ce190d2c4b25e14182e8c3c0fd5bbb7d118838d0858ae3111cb06f729ce5864c3c5e26122bee86a9f7c47721a2e22b5e3ac7cf0e3062de0eb6c5a01ba</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">这是一篇加密文章，需要密码才能访问</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <!-- <i class="iconfont icon-tags"></i> -->
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
+                    
+                  </div>
+                
+              </div>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/doc/p20130815/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">你好，克里斯</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/doc/p20130623/">
+                        <span class="hidden-mobile">恋爱编年史 🔒</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.16/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","appKey":"QRn77vH9G43ld12COHPV7geM","path":"window.location.pathname","placeholder":"来都来了，留个脚印呗~","avatar":"retro","meta":["nick","mail"],"requiredFields":["nick"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"https://dnnumjcb.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+  </div>
+  
+  <div class="statistics" style="display: none">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+          访问量 
+          <span id="leancloud-site-pv"></span>
+          
+        </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+          访客数 
+          <span id="leancloud-site-uv"></span>
+          
+        </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  
+  
+    <script  src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  
+  
+  
+    <script defer src="https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js" ></script>
+  
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

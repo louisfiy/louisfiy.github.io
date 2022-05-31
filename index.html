@@ -1,0 +1,829 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" >
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#24292f">
+  <meta name="author" content="louisfiy">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="">
+  
+  
+  <title>随心所记</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_2952668_vsc0wg4yw2k.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/custom_fluid.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+</head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>语冰</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont ic-home"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont ic-archive"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont ic-category"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont ic-tag"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont ic-user"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
+          </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('/img/bg_default.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="&lt;(￣︶￣)↗ Hello, World!">
+              
+                <(￣︶￣)↗ Hello, World!
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/doc/p20211111/" target="_self">
+          <img src="/img/Nichijou.png" srcset="/img/loading.gif" lazyload alt="写在前面——对话路易斯·费扬">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+          <i class="index-pin iconfont ic-top" title="Pin on top"></i>
+        
+        <a href="/doc/p20211111/" target="_self">
+          写在前面——对话路易斯·费扬
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20211111/" target="_self">
+          
+          各位小伙伴们，大家好啊！我是今天的特邀主持人小鹏是也。本期“作者有话说”节目，我们很荣幸邀请到本博客的创始人路易斯·费扬，和我们一起聊一聊这个与众不同、品味出众的博客系统，是如何一步步搭建起来？又需要什么样的日常运营手段？对个人、周遭环境乃至社会又具有怎样的指导意义？                                          首先简单介绍一下自己吧
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-11-11 11:11" pubdate>
+              2021-11-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20220228/" target="_self">
+          RESET：重设人生
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20220228/" target="_self">
+          
+          1  过了鬼门关，沿着黄泉路径直向西，走到尽头，可以看到一条名为忘川的小河。已是初秋十月，路两旁的绿化带，开满了红色的彼岸花，阴森森像是对我微笑，全然没有让人驻足观赏的念想。 大约一炷香的功夫，我便来到忘川河边，奈何桥下，心想干了这碗孟婆汤，就要和今生说再见了。我这一生平平淡淡，健健康康地成长，顺顺利利地毕业，之后进入一家大型公司当销售，常年出差熬夜加应酬，结果四十几岁就挂了。虽然有点儿依依不舍，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-02-28 22:07" pubdate>
+              2022-02-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%A5%87%E5%B9%BB/">奇幻</a>
+            
+              <a href="/tags/%E6%82%AC%E7%96%91/">悬疑</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20211231/" target="_self">
+          #2021年终总结
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20211231/" target="_self">
+          
+          本文依然轻描淡写地回顾了小鹏是也平平无奇的一年，请不要过分期待。             小鹏是也，今年是你在人世间的第 30 年，其中活着天数 365 天，比去年减少 1 天，请继续努力。 今年你总共换过 0 份工作，搬过 0 次家，去过 3 个城市，其中在 东莞 停留时间最长。 政治上，你 仍然 是一个奉公守法的良好市民。 经济上，今年你的收支结余是 负五位数，与去年
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-12-31 13:43" pubdate>
+              2021-12-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20210825/" target="_self">
+          伪·传奇不奇Ⅲ
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20210825/" target="_self">
+          
+          很快，我便会向你提出那个问题。这将是我一生中最重要的时刻，希望你认真地倾听，记住每一个细节。夜深人静，你和我在外消磨了一个晚上，用餐、看电影、轧马路。夏风拂过，你对我说，时间不早了。我说好，我送你回去。今晚的月色真美，虽是夏天，可是一点儿也不觉得炎热。然后，你问我，你是不是还有话对我说？ 那个时候，我已经大四，典礼一过，大概就要说再见了。这一个月忙于两地奔波，差不多快记不起校园生活是有多美好，所以
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-25 23:47" pubdate>
+              2021-08-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+            
+              <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20210531/" target="_self">
+          相亲记
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20210531/" target="_self">
+          
+          当我在相亲时我在想什么    相亲的地点定在这家新开的奶茶店，我们挑了一张临窗的桌子。周末，早十点，五月的阳光晃得人睁不开眼。 眼前这位男士，高高瘦瘦，戴着眼镜，看起来斯斯文文。他瞥了一眼桌上的菜单，然后推到我面前，似乎心里已经有了答案。 “看一下……”他的声音有点小，不容易听清，同时打开手机扫了扫桌面的二维码。原来是扫码点餐。 假如在平时，我可能会点一杯烧仙草，或是一杯芝士抹茶，或是一杯鲜榨水果
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-05-31 19:06" pubdate>
+              2021-05-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%88%B1%E6%83%85/">爱情</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20210106/" target="_self">
+          前路未定（框架）
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20210106/" target="_self">
+          
+          0  我约他出来吃个饭，谈点事。他说今晚要加班，明天吧。我说，那行，我们分手吧。   1  我们在这家新开的餐厅挑了一张临窗的桌子坐下。这是冷战两周以来，第一次见面。交往近一年，眼前这个男人一直都是一副不冷不热的样子，让人看不清未来的方向。 “看一下，你想吃什么？”他一如既往把菜单推到我面前。 我不悦地说：“每次和你吃饭，你都把选择权抛给我，没有半点主见……”——我顿了顿——“我们还是分手吧。”
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-01-06 20:52" pubdate>
+              2021-01-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20200927/" target="_self">
+          闲话冰菓
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20200927/" target="_self">
+          
+          前几天全款盘下一套『氷菓』的书，多少有点脑子一热、冲动消费的嫌疑。好在这种想法并不是常常有之，再说经济复苏的情况下，积极贡献消费，提高国民生产总……不好意思说错了，应该是经济条件允许的情况下，偶尔补充精神食粮，远离电子产品，未必全是坏事。不过轻小说一直以来都不是我所青睐的文学类型，一方面轻小说在岛国就好比中文世界的网络小说，很难说具有崇高的文学艺术性可言；另一方面这种日式行文风格在我看来如此别扭，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-09-27 22:30" pubdate>
+              2020-09-27
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B9%A6%E5%BD%B1%E9%9F%B3/">书影音</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20191231/" target="_self">
+          #2019年终总结
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20191231/" target="_self">
+          
+          附件：📄 年年是好年.pptx (Not Exists)
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-12-31 12:20" pubdate>
+              2019-12-31
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/">年终总结</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20190730/" target="_self">
+          次元杀
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20190730/" target="_self">
+          
+          1  “死者名叫费扬，男，三十岁，是我市某知名游戏公司的软件工程师，又名程序员，俗称码农。” 警长陆亦斯一边听着助手贺思辰的汇报，一边戴上白手套开始检查现场。 大约30分钟之前，正准备下班的陆亦斯接到了一通报警，赶到事发地点的时候，刚好是傍晚6点37分。 “今天下午6点左右，”贺思辰继续介绍现场情况，“费扬被发现倒在自己卧室的浴室里，手腕处有明显的刀割伤，初步怀疑是自杀，通知警方的是费扬的未婚妻骆
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-07-30 23:03" pubdate>
+              2019-07-30
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+            
+              <a href="/tags/%E6%82%AC%E7%96%91/">悬疑</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/doc/p20190720/" target="_self">
+          记一次随想
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/doc/p20190720/" target="_self">
+          
+          今年之后有了一个新的想法，可能随着时代的发展、科技的进步，今后未必会有纸质版的 Sinny 了。（啊，有多久没有说出这个名字了呢？） 主要是手累…… 可这世界上本来就没有绝对可言。我一直以为终有一天我会封笔，可是因为你，我的心在二十七岁那年找到了十九岁时的感觉。 并不是因为怀旧，而是忽然想起，原来那些年自己一个人是这么卑微地过来的啊。 年龄大了，骚不动了。不想再重复没有意义的事情，可有可无我选无，
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-07-20 12:18" pubdate>
+              2019-07-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/#board">9</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+  </div>
+  
+  <div class="statistics" style="display: none">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+          访问量 
+          <span id="leancloud-site-pv"></span>
+          
+        </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+          访客数 
+          <span id="leancloud-site-uv"></span>
+          
+        </span>
+      
+
+    
+  </div>
+
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.0/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
