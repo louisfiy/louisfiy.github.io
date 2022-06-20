@@ -1772,12 +1772,8 @@ input[type=checkbox] {
 }
 .list-group-item {
   display: flex;
-  justify-content: between;
   background-color: transparent;
   border: 0;
-}
-.list-group-item time {
-  flex: 0 0 4rem;
 }
 .list-group-item .list-group-item-title {
   flex: 1;
@@ -1789,9 +1785,6 @@ input[type=checkbox] {
   .list-group-item {
     font-size: 0.95rem;
     padding: 0.5rem 0.75rem;
-  }
-  .list-group-item time {
-    flex: 0 0 3rem;
   }
 }
 .list-group-item-action {
