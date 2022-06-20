@@ -1,4 +1,5 @@
 /* global CONFIG */
+// eslint-disable-next-line no-console
 
 (function(window, document) {
   // 查询存储的记录
@@ -22,14 +23,12 @@
                 }
                 resolve(record);
               }).catch(error => {
-              // eslint-disable-next-line no-console
-                console.error('Failed to create', error);
+                console.error('Failed to create: ', error);
                 reject(error);
               });
           }
         }).catch((error) => {
-        // eslint-disable-next-line no-console
-          console.error('LeanCloud Counter Error:', error);
+          console.error('LeanCloud Counter Error: ', error);
           reject(error);
         });
     });
@@ -47,8 +46,7 @@
         }
         resolve(res);
       }).catch((error) => {
-        // eslint-disable-next-line no-console
-        console.error('Failed to save visitor count', error);
+        console.error('Failed to save visitor count: ', error);
         reject(error);
       });
     });
@@ -70,11 +68,17 @@
 
   // 校验是否为有效的 Host
   function validHost() {
-    let sites = CONFIG.web_analytics.leancloud.sites
-    if (sites.includes(window.location.hostname)) {
-      return true
+    var hostname = window.location.hostname;
+    if (CONFIG.web_analytics.leancloud.ignore_local) {
+      if (hostname === 'localhost' || hostname === '127.0.0.1') {
+        return false;
+      }
     }
-    return false
+    let sites = CONFIG.web_analytics.leancloud.sites;
+    if (!sites.includes(hostname)) {
+      return false;
+    }
+    return true;
   }
 
   // 校验是否为有效的 UV
@@ -92,9 +96,7 @@
   }
 
   function addCount(Counter) {
-    if (['localhost', '127.0.0.1'].includes(location.hostname)) return false
-
-    var enableIncr = CONFIG.web_analytics.enable && validHost();
+    var enableIncr = CONFIG.web_analytics.enable && !Fluid.ctx.dnt && validHost();
     var getterArr = [];
     var incrArr = [];
 
@@ -155,6 +157,13 @@
   var appKey = CONFIG.web_analytics.leancloud.app_key;
   var serverUrl = CONFIG.web_analytics.leancloud.server_url;
 
+  if (!appId) {
+    throw new Error('LeanCloud appId is empty');
+  }
+  if (!appKey) {
+    throw new Error('LeanCloud appKey is empty');
+  }
+
   function fetchData(api_server) {
     var Counter = (method, url, data) => {
       return fetch(`${api_server}/1.1${url}`, {
@@ -171,7 +180,7 @@
     addCount(Counter);
   }
 
-  var apiServer = appId.slice(-9) !== '-MdYXbMMI' ? serverUrl : `https://${appId.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
+  var apiServer = serverUrl || `https://${appId.slice(0, 8).toLowerCase()}.api.lncldglobal.com`;
 
   if (apiServer) {
     fetchData(apiServer);

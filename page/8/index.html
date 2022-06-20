@@ -12,11 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <meta name="theme-color" content="#24292f">
+  <meta name="theme-color" content="#2f4154">
   <meta name="author" content="louisfiy">
   <meta name="keywords" content="">
   
     <meta name="description" content="">
+  
   
   
   <title>随心所记</title>
@@ -25,9 +26,12 @@
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -36,7 +40,11 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+
+
 
   
 <link rel="stylesheet" href="/css/custom_fluid.css">
@@ -45,16 +53,48 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
 </head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>语冰</strong>
@@ -136,6 +176,7 @@
               &nbsp;<i class="iconfont icon-search"></i>&nbsp;
             </a>
           </li>
+          
         
         
       </ul>
@@ -143,36 +184,40 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/bg_default.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="&lt;(￣︶￣)↗ Hello, World!">
-              
-                <(￣︶￣)↗ Hello, World!
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/bg_default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="你好，世界！"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
@@ -191,12 +236,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20101221/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20101221/" target="_self">
+        <div>
           他是一个很奇怪的人。他叫罗永。 他的厨艺一流，让我不知道该用什么样的形容词来描绘他做的菜，只知道他可以把被我烧焦的菜处理得丝毫察觉不出破绽。 但是他从不做红烧肉给我吃，他明知道我最喜欢吃的就是红烧肉；他也不允许我在家里做红烧肉，上一次就因为这个让我脸上挂彩……我不理解，我问他，他没有回答。他似乎认为没有向我做任何解释的必要。 他是个烟酒不沾的标准先生，与邻里间的相处也算融洽，即使平日里有个什么摩擦
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -208,18 +253,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%85%E4%BA%8B/" class="category-chain-item">故事</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%89%A7%E6%83%85/">剧情</a>
+              <a href="/tags/%E5%89%A7%E6%83%85/">#剧情</a>
             
           </div>
         
@@ -238,12 +297,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20101015/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20101015/" target="_self">
+        <div>
           （这是一篇加密文章，需要密码才能访问。）
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -255,18 +314,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -285,12 +358,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20101011/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20101011/" target="_self">
+        <div>
           （这是一篇加密文章，需要密码才能访问。）
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -302,18 +375,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -332,12 +419,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20100816/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20100816/" target="_self">
+        <div>
           灾难是迟早会发生的，死亡只是一个开始。 ——题记    这种不安的情绪已经延续了许多天，恐龙们似乎有所察觉。 远古的太阳老早就升了起来，阳光穿过茂密的丛林，在大地上留下光和影的交错。三叠纪的守望者——一条普普通通、平平凡凡的暴龙——早早便起身外出觅食。这几天异常闷热，恐龙们大多都没有心思狩猎。但守望者不同，他是家庭的顶梁柱，他有妻儿。 守望者失望着空手而归。不知何故，最近莫名其妙倒地死去的恐龙多得
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -349,18 +436,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%85%E4%BA%8B/" class="category-chain-item">故事</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -379,12 +480,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20100503/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20100503/" target="_self">
+        <div>
           （这是一篇加密文章，需要密码才能访问。）
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -396,18 +497,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -426,12 +541,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20100216/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20100216/" target="_self">
+        <div>
           老陈认识老洪的时候，是在高一的第二学期了吧。那时候，老陈刚刚踏入学校文学社的大门，愣头愣脑的，没少得到前辈的帮助，尤其是老洪。两人因此结下了深不可测的友谊。 老陈是一个性格内向的人，他之所以会加入文学社这样一个热闹非凡的大集体，完全是一个偶然。一开始的确是这样。起初，老陈受邀以“特别顾问”而非正式社员的身份进入文学社，但是他和早已成为社员的老洪拥有相同的梦想，那就是振兴文学社！他们知道，既然得不到
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -443,18 +558,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%86%99%E4%BD%9C/">写作</a>
+              <a href="/tags/%E5%86%99%E4%BD%9C/">#写作</a>
             
           </div>
         
@@ -473,12 +602,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20090903/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20090903/" target="_self">
+        <div>
           二〇〇九年九月三日下午放学后，我打算到学生宿舍拜访拜访刚刚转学到俺班的MM许文嫱——就是那个长得如花似玉、我第一眼就对她产生了好感的新任班长。今天的天气可真不错，夕阳的柔光像母亲的手，轻轻地抚摸那蓝蓝的天、白白的云、青青的山和绿绿的水——江南不仅有蓝天白云青山绿水，而且自古多才子佳人。 这会儿，文嫱同学正坐在宿舍楼下的凉亭里温书。我想：“或许我不应该打扰她。”可是眨眼间，我已经来到她的面前。 “你
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -490,18 +619,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%85%E4%BA%8B/">故事</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%85%E4%BA%8B/" class="category-chain-item">故事</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%A0%A1%E5%9B%AD/">校园</a>
+              <a href="/tags/%E6%A0%A1%E5%9B%AD/">#校园</a>
             
           </div>
         
@@ -520,12 +663,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20090412/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20090412/" target="_self">
+        <div>
           （这是一篇加密文章，需要密码才能访问。）
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -537,18 +680,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -567,12 +724,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20090131/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20090131/" target="_self">
+        <div>
           绝对的微笑附着在每一人的脸上。 夜幕刚刚降临，广场便灯火万盏。全村的男女老少们兴奋地、一刻也不停地絮聒着，他们极不耐烦地等候着子夜的降临。这里虽不是什么都市广场，但人、桌子和满桌子的祭品汇集成纵横交错的壮观的世界，化成一座袖珍不夜城。 黑暗中蛰伏的我不经意地抬头，却什么也看不见，没有星星、没有月亮，也许充斥了灰云——偶尔撞爆眼球的光亮也只是人类制造的焰火。是的，那焰火好美好美…… 空气中弥漫着祭祀
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -584,18 +741,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%94%9F%E6%B4%BB/">生活</a>
+              <a href="/tags/%E7%94%9F%E6%B4%BB/">#生活</a>
             
           </div>
         
@@ -614,12 +785,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/doc/p20090121/" target="_self">
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/doc/p20090121/" target="_self">
+        <div>
           （这是一篇加密文章，需要密码才能访问。）
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -631,18 +802,32 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E7%A7%91%E5%B9%BB/">科幻</a>
+              <a href="/tags/%E7%A7%91%E5%B9%BB/">#科幻</a>
             
           </div>
         
@@ -687,57 +872,59 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-  <div class="statistics" style="display: none">
-    
-    
-
-    
-      
-        <!-- LeanCloud 统计PV -->
-        <span id="leancloud-site-pv-container" style="display: none">
-          访问量 
-          <span id="leancloud-site-pv"></span>
-          
-        </span>
-      
-      
-        <!-- LeanCloud 统计UV -->
-        <span id="leancloud-site-uv-container" style="display: none">
-          访客数 
-          <span id="leancloud-site-uv"></span>
-          
-        </span>
-      
-
-    
-  </div>
-
-
+    <div class="footer-content">
+       <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+    </div>
+  
+  
+    <div class="statistics" style="display: none">
+  
   
 
   
-</footer>
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+        
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+        
+      </span>
+    
+    
 
+  
+</div>
 
-  <!-- SCRIPTS -->
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
   
   <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
@@ -756,10 +943,22 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -769,47 +968,24 @@
 
 
 
-  
-
-
-
-
-
 
   <script defer src="/js/leancloud.js" ></script>
 
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>

@@ -12,11 +12,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <meta name="theme-color" content="#24292f">
+  <meta name="theme-color" content="#2f4154">
   <meta name="author" content="louisfiy">
   <meta name="keywords" content="">
   
     <meta name="description" content="1  过了鬼门关，沿着黄泉路径直向西，走到尽头，可以看到一条名为忘川的小河。已是初秋十月，路两旁的绿化带，开满了红色的彼岸花，阴森森像是对我微笑，全然没有让人驻足观赏的念想。 大约一炷香的功夫，我便来到忘川河边，奈何桥下，心想干了这碗孟婆汤，就要和今生说再见了。我这一生平平淡淡，健健康康地成长，顺顺利利地毕业，之后进入一家大型公司当销售，常年出差熬夜加应酬，结果四十几岁就挂了。虽然有点儿依依不舍，">
+  
   
   
   <title>RESET：重设人生 · 随心所记</title>
@@ -24,25 +25,19 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
   <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
 
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://lib.baomitu.com/highlight.js/10.7.3/styles/github-gist.min.css" />
-    
-  
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
-  
-    <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -51,7 +46,11 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+
+
 
   
 <link rel="stylesheet" href="/css/custom_fluid.css">
@@ -60,16 +59,48 @@
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.8.14","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"headingSelector":"h1,h2,h3","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
 </head>
 
 
 <body>
-  <header style="height: 50vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 50vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>语冰</strong>
@@ -151,6 +182,7 @@
               &nbsp;<i class="iconfont icon-search"></i>&nbsp;
             </a>
           </li>
+          
         
         
       </ul>
@@ -158,62 +190,70 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/bg_default.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="RESET：重设人生">
-              
-                RESET：重设人生
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-02-28 22:07" pubdate>
-        2022年2月28日 晚上
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      13k 字
-    </span>
   
 
-  
-
-  
-  
-    <span style="display: none">
-      
-        <!-- LeanCloud 统计文章PV -->
-        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
-          <i class="iconfont icon-eye" aria-hidden="true"></i>
-          <span id="leancloud-page-views"></span> 次
-        </span>
-      
-    </span>
-  
-</div>
-
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/bg_default.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle">RESET：重设人生</span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-02-28 22:07" pubdate>
+          2022年2月28日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          13k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+      <span style="display: none">
+        
+          <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+            <i class="iconfont icon-eye" aria-hidden="true"></i>
+            <span id="leancloud-page-views"></span> 次
+          </span>
+          
+        
+      </span>
+    
+  </div>
+
+
+        
       </div>
+
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
@@ -222,19 +262,20 @@
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
     <div class="col-lg-8 nopadding-x-md">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
+        <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">RESET：重设人生</h1>
-
             
               
             
-            
-              
             
             
               <div class="note note-secondary">
@@ -242,8 +283,9 @@
               </div>
             
             
-            <div class="markdown-body">
-              <div class="text-center font-weight-bold">1</div>
+              <div class="markdown-body">
+                
+                <div class="text-center font-weight-bold">1</div>
 
 <p>过了鬼门关，沿着黄泉路径直向西，走到尽头，可以看到一条名为忘川的小河。已是初秋十月，路两旁的绿化带，开满了红色的彼岸花，阴森森像是对我微笑，全然没有让人驻足观赏的念想。</p>
 <p>大约一炷香的功夫，我便来到忘川河边，奈何桥下，心想干了这碗孟婆汤，就要和今生说再见了。我这一生平平淡淡，健健康康地成长，顺顺利利地毕业，之后进入一家大型公司当销售，常年出差熬夜加应酬，结果四十几岁就挂了。虽然有点儿依依不舍，觉得我的人生不应该是这样，但是对于自己已经死掉的事实，我还是坦然接受吧……</p>
@@ -387,7 +429,7 @@
 <p>“那我更加没理由占着这具身体了！”</p>
 <p>“你怎么就是学不会，不然你告诉我你存在的意义是什么？她有她的命数，你有你的命数，懂？”</p>
 <p>“不懂。”我并不想理会他的神棍解释，“而且你这样不打自招，不就等于是你告诉我沈涵阳还有复活的机会？”</p>
-<p>“不，我告诉你恰恰是为了阻止你。你说得对，‘记忆可不是好东西’，一旦让沈涵阳的记忆侵占你的大脑，就有可能把她原来的灵魂吸引过来，我的任务是引导你的重生，任何潜在的坑我都必须填上。总之你给我记住了：不要回想起沈涵阳的事情，等你完全融入这个家庭，自然而然地会慢慢忘记自己的前世，那时候你就真正意义上地‘重生’了！” </p>
+<p>“不，我告诉你恰恰是为了阻止你。你说得对，‘记忆可不是好东西’，一旦让沈涵阳的记忆侵占你的大脑，就有可能把她原来的灵魂吸引过来，我的任务是引导你的重生，任何潜在的坑我都必须填上。总之你给我记住了：不要回想起沈涵阳的事情，等你完全融入这个家庭，自然而然地会慢慢忘记自己的前世，那时候你就真正意义上地‘重生’了！”</p>
 <p>我听不懂，但我大受震撼——这时耳边渐渐传来妈妈的声音：“……醒一醒，到家了……”</p>
 <p>我揉了揉朦胧的睡眼，忽然觉得心里堵得难受，眼泪情不自禁流了下来。</p>
 <p>“你怎么哭了……”妈妈轻声细语问道。</p>
@@ -403,7 +445,7 @@
 <p>“没事的，慢慢来，想不起也没关系……”</p>
 <div class="text-center font-weight-bold">5</div>
 
-<p>第二天，趁妈妈出去买菜的空挡，我偷偷溜了出去，虽然她嘱咐我好好待在家里，下午去医院复查，但我才不会乖乖听话呢。</p>
+<p>第二天，趁妈妈出去买菜的空当，我偷偷溜了出去，虽然她嘱咐我好好待在家里，下午去医院复查，但我才不会乖乖听话呢。</p>
 <p>不过既然跑出来了，那肯定不能空手而归啊。我给哥哥打了电话，说现在在他学校，等他下课一起吃饭；同时给妈妈发了信息，以免她担心。等她发现我先斩后奏并急切给我打来电话时，我已经坐上了去往大学城的公交车。</p>
 <p>11点40分，上午最后一节课结束。我和哥哥约好在体育馆前面的马路碰面。学生人潮川流不息，向饭堂行进，只有我一个人逆流而上，显得格格不入。</p>
 <p>“我在你斜对面。”哥哥发来消息。我向左前方望过去，一抬头就看到那个四眼仔跟我打招呼。我给他回了消息：</p>
@@ -465,13 +507,13 @@
 <p>“什么问题？”</p>
 <p>“你喜欢爸爸还是喜欢妈妈？”</p>
 <p>“你这是什么弱智提问？”</p>
-<p>“那换一个：妈妈爱你多一点还是爱我多一点？” </p>
+<p>“那换一个：妈妈爱你多一点还是爱我多一点？”</p>
 <p>“父母对子女的爱是一样的。”</p>
 <p>“一样是一样，但是会有所倾向。诶，你不是说过他们就是太惯着我吗？”</p>
 <p>“我几时说过这种话？”</p>
 <p>“你别不承认啊！虽然我不记得住院之前的事情，但是醒来之后你说的话我都记着呢。”</p>
 <p>“穷养儿富养女，何况你还小，他们肯定更加宠爱你。”</p>
-<p>“可是你是儿子耶。” </p>
+<p>“可是你是儿子耶。”</p>
 <p>“我只是酒后乱性的产物，你才是爱情的结晶。”</p>
 <p>“啥意思？啥意思？”我瞬间起了八卦之心。</p>
 <p>“没。”哥哥试图解释，“我是说我是意外怀孕来的……”</p>
@@ -573,7 +615,7 @@
 <p>“你是不是做了对不起我的事？”</p>
 <p>“打住！这种事情你情我愿，又不是我强迫你的！”</p>
 <p>我脑子一懵，脑海里浮现出各种儿童不宜的场景：</p>
-<p>“你强迫我做什么了？” </p>
+<p>“你强迫我做什么了？”</p>
 <p>“你是不是听不懂人话，都说了你情我愿——不想跟你浪费口舌！”他转身欲走，我揪住他：</p>
 <p>“别走啊，你给我解释清楚！”</p>
 <p>“我警告你，别再纠缠我了！”他推开我，我一个踉跄跌倒在地，他也不管，转身就走。</p>
@@ -618,32 +660,51 @@
 <p>所以我在描写女主的言行和心理时，是满怀着积极、乐观和希望的——作者在现实世界做不到这一点，只能寄托于角色。但是这篇小说的结局是不大阳光的，虽然，可能这就是现实：世界很复杂，人生很辛苦。然而我对沈涵阳毕竟是有私心的，故事后段对她自身感情的遭遇，其实是写得比较委婉的。只不过剧情所需，她注定要面对那些困难，想起来常常有些感慨。</p>
 <p>本来我想在文章中传达某些人生观念，后来想想还是算了，显然我不是干这块的料，小说中对家庭、爱情、朋友，以及生活的理解太过肤浅了，真实人生中不是这样的，只是到今天我仍然没搞明白。</p>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/categories/%E5%B0%8F%E8%AF%B4/">小说</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <!-- <i class="iconfont icon-tags"></i> -->
-                    
-                      <a class="hover-with-bg" href="/tags/%E5%A5%87%E5%B9%BB/">#奇幻</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E6%82%AC%E7%96%91/">#悬疑</a>
-                    
-                  </div>
                 
               </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%B0%8F%E8%AF%B4/" class="category-chain-item">小说</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%A5%87%E5%B9%BB/">#奇幻</a>
+      
+        <a href="/tags/%E6%82%AC%E7%96%91/">#悬疑</a>
+      
+    </div>
+  
+</div>
+
+
               
+
               
-                <div class="post-prevnext">
+                <div class="post-prevnext my-5">
                   <article class="post-prev col-6">
                     
                     
@@ -651,7 +712,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/doc/p20211231/">
+                      <a href="/doc/p20211231/" title="#2021年终总结#">
                         <span class="hidden-mobile">#2021年终总结#</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -663,16 +724,12 @@
             </div>
 
             
-              <!-- Comments -->
-              <article class="comments" id="comments" lazyload>
-                
-                  
-                
-                
+  <article id="comments" lazyload>
+    
   <div id="valine"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#valine', function() {
-      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.16/Valine.min.js', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.4.17/Valine.min.js', function() {
         var options = Object.assign(
           {"appId":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","appKey":"QRn77vH9G43ld12COHPV7geM","path":"window.location.pathname","placeholder":"来都来了，留个脚印呗~","avatar":"retro","meta":["nick","mail"],"requiredFields":["nick"],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":true,"serverURLs":"https://dnnumjcb.api.lncldglobal.com","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
           {
@@ -682,7 +739,9 @@
         )
         new Valine(options);
         Fluid.utils.waitElementVisible('#valine .vcontent', () => {
-          Fluid.plugins.initFancyBox('#valine .vcontent img:not(.vemoji)');
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
         })
       });
     });
@@ -690,17 +749,44 @@
   <noscript>Please enable JavaScript to view the comments</noscript>
 
 
-              </article>
-            
+  </article>
+
+
           </article>
         </div>
       </div>
     </div>
-    
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
   </div>
 </div>
 
-<!-- Custom -->
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+
+  
+
+
+
+
+
 
 
     
@@ -725,57 +811,59 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-  <div class="statistics" style="display: none">
-    
-    
-
-    
-      
-        <!-- LeanCloud 统计PV -->
-        <span id="leancloud-site-pv-container" style="display: none">
-          访问量 
-          <span id="leancloud-site-pv"></span>
-          
-        </span>
-      
-      
-        <!-- LeanCloud 统计UV -->
-        <span id="leancloud-site-uv-container" style="display: none">
-          访客数 
-          <span id="leancloud-site-uv"></span>
-          
-        </span>
-      
-
-    
-  </div>
-
-
+    <div class="footer-content">
+       <span>Copyright &copy; 2022 <i class="iconfont ic-clover"></i> Created by louisfiy</span><br> <span>Powered by <a href="https://hexo.io/zh-CN/" target="_blank" rel="nofollow noopener">Hexo</a></span> & <span>Theme <a href="https://hexo.fluid-dev.com/docs/" target="_blank" rel="nofollow noopener">Fluid⁺</a></span> 
+    </div>
+  
+  
+    <div class="statistics" style="display: none">
+  
   
 
   
-</footer>
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+        
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+        
+      </span>
+    
+    
 
+  
+</div>
 
-  <!-- SCRIPTS -->
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
   
   <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
@@ -794,10 +882,7 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
-
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -807,56 +892,39 @@
 
 
 
-  
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
 
 
-
   
-  
-    <script  src="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
-  
-  
-  
-    <script defer src="https://lib.baomitu.com/clipboard.js/2.0.10/clipboard.min.js" ></script>
-  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
 
 
-
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script defer src="/js/leancloud.js" ></script>
 
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
