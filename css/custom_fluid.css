@@ -25,11 +25,11 @@
 }
 
 /* 加密插件样式 */
-.markdown-body .hbe-content {
+.hbe .hbe-content {
   font-size: 100% !important;
 }
 
-.markdown-body .hbe-button {
+.hbe .hbe-button {
   margin: 32px auto 0;
 }
 
