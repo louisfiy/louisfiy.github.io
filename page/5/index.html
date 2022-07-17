@@ -54,7 +54,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":["home"]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
+    var CONFIG = {"hostname":"louisfiy.com","root":"/","version":"1.9.2","typing":{"enable":false,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":false,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"DnnumjCbHVDzSJOKDmYDX1bU-MdYXbMMI","app_key":"QRn77vH9G43ld12COHPV7geM","server_url":null,"path":"window.location.pathname","ignore_local":true,"sites":["louisfiy.com"]}},"search_path":"/search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -186,7 +186,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="日常任务：早睡早起 (0/1)"></span>
+            <span id="subtitle">今日任务：早睡早起 (0/1)</span>
           
         </div>
 
@@ -600,7 +600,7 @@
       
       <a class="index-excerpt index-excerpt__noimg" href="/doc/p20130508/" target="_self">
         <div>
-          夏雨  南国的夏天是多雨的。小时候很喜欢坐在屋檐下，听着雨水敲打在瓦屋屋檐上“滴滴嗒嗒”的声音，看着地上溅起一朵朵雨花，甚是有趣。夏时的雨总是短暂的，来势汹汹，气势磅礴，但是来也快去也快；有时候伴随着电闪雷鸣，便也能上演一场天空的盛筵。往往是午后，大人们都在休息，孩子们便成群结队，活跃在屋前村后。儿时的我们总是富于想象，总是能创造出各种乐此不疲的游戏并沉迷其中。可是突然一阵大风吹过，远方天际一片乌
+          夏雨  南国的夏天是多雨的。小时候很喜欢坐在屋檐下，听着雨水敲打在瓦屋屋檐上“滴滴嗒嗒”的声音，看着地上溅起一朵朵雨花，甚是有趣。夏时的雨总是短暂的，来势汹汹，气势磅礴，但是来也快去也快；有时候伴随着电闪雷鸣，便也能上演一场天空的盛筵。往往是午后，大人们都在休息，孩子们便成群结队，活跃在屋前村后。儿时的我们总是富于想象，总是能创造出各种乐此不疲的游戏并沉迷其中。可是突然一阵狂风吹过，远方天际一片乌
         </div>
       </a>
 
@@ -918,21 +918,6 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
