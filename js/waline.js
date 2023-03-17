@@ -1,1 +1,0 @@
-(function(e,t){function n(){let t=e.location.hostname;if(t==="localhost"||t==="127.0.0.1"){return false}let n=CONFIG.web_analytics.sites;if(n.includes(t)){return true}return false}Waline.pageviewCount({serverURL:CONFIG.web_analytics.serverURL,path:e.location.pathname,update:n()})})(window,document);

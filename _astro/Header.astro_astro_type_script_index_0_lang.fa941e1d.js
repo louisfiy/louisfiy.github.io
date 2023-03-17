@@ -1,0 +1,1 @@
+let o=document.getElementById("header"),l=0,t=!0;window.addEventListener("scroll",()=>{t&&(setTimeout(()=>{let e=window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop;e>60&&e-l>0?o.classList.add("down"):o.classList.remove("down"),l=e,t=!0},100),t=!1)},{passive:!0});
