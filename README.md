@@ -7,4 +7,4 @@
 * [Stylus](https://stylus-lang.com/)
 * [iconify](https://iconify.design/)
 * [Waline](https://waline.js.org/)
-* [Moment.js](https://momentjs.com/)
+* [Day.js](https://day.js.org/)
