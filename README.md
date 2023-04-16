@@ -8,3 +8,4 @@
 * [iconify](https://iconify.design/)
 * [Waline](https://waline.js.org/)
 * [Day.js](https://day.js.org/)
+* [ECharts](https://echarts.apache.org/)
