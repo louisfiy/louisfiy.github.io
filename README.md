@@ -3,6 +3,7 @@
 ## Dependencies
 
 * [Astro](https://astro.build/)
+* [Alpine.js](https://alpinejs.dev/)
 * [Tailwind CSS](https://tailwindcss.com/)
 * [Stylus](https://stylus-lang.com/)
 * [iconify](https://iconify.design/)
