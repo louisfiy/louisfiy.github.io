@@ -1,0 +1,13 @@
+import{c as u}from"./index.c97107e6.js";import"./index.f2c3d35f.js";import{F as o}from"./Favorite.218f086a.js";import"./dayjs.min.63f98895.js";import"./_plugin-vue_export-helper.c27b6911.js";import"./runtime-core.esm-bundler.45595617.js";const c={title:"基于纸计算和手工智能的数据可视化报告",date:"2021-12-25T23:22:33.000Z",categories:["随笔"],tags:["年终总结"],hide:!0};function C(){return[{depth:2,slug:"收入",text:"收入"},{depth:2,slug:"支出",text:"支出"},{depth:2,slug:"日记",text:"日记"},{depth:2,slug:"电影",text:"电影"}]}function e(t){const n=Object.assign({p:"p",a:"a",h2:"h2"},t.components);return u(o,{children:[u("div",{class:"note primary",children:u(n.p,{children:["注：数据截止至12月31日，已做脱敏处理。",u(n.a,{href:"https://echarts.apache.org/zh/index.html",children:"ECharts"})," 提供技术支持。"]})}),`
+`,u(n.h2,{id:"收入",children:"收入"}),`
+`,u("astro-client-only",{"client:only":"vue","client:display-name":"ChartIncome","client:component-path":"@/components/ChartIncome.vue","client:component-export":"default","client:component-hydration":!0}),`
+`,u("div",{class:"note primary",children:u(n.p,{children:"去™的工作，老子不干了！——开个玩笑，赚钱要紧！赚钱要紧！"})}),`
+`,u(n.h2,{id:"支出",children:"支出"}),`
+`,u("astro-client-only",{"client:only":"vue","client:display-name":"ChartExpense","client:component-path":"@/components/ChartExpense.vue","client:component-export":"default","client:component-hydration":!0}),`
+`,u("div",{class:"note primary",children:u(n.p,{children:"“跟住呢？” “翻工咯。” “不翻得唔得啊？” “不翻你养我啊？” “喂——” “又点啊？” “我养你啊！” “你养着你自己先啦，傻仔。”"})}),`
+`,u(n.h2,{id:"日记",children:"日记"}),`
+`,u("astro-client-only",{"client:only":"vue","client:display-name":"ChartDiary","client:component-path":"@/components/ChartDiary.vue","client:component-export":"default","client:component-hydration":!0}),`
+`,u("div",{class:"note primary",children:u(n.p,{children:"“正经人谁写日记啊？” “是啊。” “你写日记吗？” “我不写。你写日记吗？” “谁能把心里话写日记里？” “写出来的那能叫心里话？”"})}),`
+`,u(n.h2,{id:"电影",children:"电影"}),`
+`,u("astro-client-only",{"client:only":"vue","client:display-name":"ChartMovie","client:component-path":"@/components/ChartMovie.vue","client:component-export":"default","client:component-hydration":!0}),`
+`,u("div",{class:"note primary",children:u(n.p,{children:"看着电影里别人的人生五颜六色，而我的人生只有一种颜色：乐色。"})})]})}function i(t={}){const{wrapper:n}=t.components||{};return n?u(n,{...t,children:u(e,{...t})}):e(t)}const h="src/content/doc/p20211225.mdx",B="D:/Shin/astro-site/src/content/doc/p20211225.mdx",F=(t={})=>i({...t,components:{Fragment:o,...t.components}});F[Symbol.for("astro.needsHeadRendering")]=!c.layout;F.moduleId="D:/Shin/astro-site/src/content/doc/p20211225.mdx";export{F as Content,F as default,B as file,c as frontmatter,C as getHeadings,h as url};

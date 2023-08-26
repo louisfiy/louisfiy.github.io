@@ -1,0 +1,1 @@
+import{g as i}from"./Favorite.218f086a.js";import"./dayjs.min.63f98895.js";import"./_plugin-vue_export-helper.c27b6911.js";import"./runtime-core.esm-bundler.45595617.js";export{i as default};

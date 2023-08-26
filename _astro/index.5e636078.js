@@ -1,0 +1,1 @@
+import{a as f,m as n}from"./Favorite.218f086a.js";function l(s={},t,{class:a}={}){let l="";a&&(typeof s.class<"u"?s.class+=` ${a}`:typeof s["class:list"]<"u"?s["class:list"]=[s["class:list"],a]:s.class=a);for(const[t,a]of Object.entries(s))l+=f(a,t,!0);return n(l)}export{l as s};
