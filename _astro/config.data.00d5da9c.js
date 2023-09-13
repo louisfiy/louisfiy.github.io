@@ -1,0 +1,1 @@
+const i={title:"语冰",description:"An Astro Blog Website",author:"louisfiy",name:"L. Fiyoung",slogan:"“对不起，其实我是个程序员。”",serverUrl:"https://www.louisfiy.top",initTime:"2021-11-12 15:27:52",historyTime:"2011-09-03 00:00:00",historyText:"这是一篇年代久远的文章，你可能会看到糟糕的剧情、夸张的文笔、空洞的内涵……请不要过分期待。",spoilerText:"本文存在剧透风险，建议顺序阅读。"};export{i as s};
