@@ -10,3 +10,7 @@
 * [Waline](https://waline.js.org/)
 * [Day.js](https://day.js.org/)
 * [ECharts](https://echarts.apache.org/)
+
+---
+
+© 2024 · Built with 🚀 by louisfiy. All rights reserved.
